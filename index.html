@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Hedyaoui</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body> 
+    <div class="header"><h1><!-- Menu de navigation -->
+        <header style="background-color: #000000; padding: 15px 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+                <!-- Logo de l'école -->
+                <a href="/" style="color: white; font-size: 24px; text-decoration: none; font-weight: bold;">Sarah School</a>
+        
+                <!-- Liens de navigation pour bureau -->
+                <nav id="menu-bureau" style="display: flex; gap: 20px;">
+                    <a href="/" style="color: white; text-decoration: none; font-size: 16px; padding: 10px 15px; border-radius: 5px;">Accueil</a>
+                    <a href="/a-propos" style="color: white; text-decoration: none; font-size: 16px; padding: 10px 15px; border-radius: 5px;">À propos</a>
+                    <a href="/academique" style="color: white; text-decoration: none; font-size: 16px; padding: 10px 15px; border-radius: 5px;">Académique</a>
+                    <a href="/admissions" style="color: white; text-decoration: none; font-size: 16px; padding: 10px 15px; border-radius: 5px;">Admissions</a>
+                    <a href="/evenements" style="color: white; text-decoration: none; font-size: 16px; padding: 10px 15px; border-radius: 5px;">Événements</a>
+                    <a href="/contact" style="color: white; text-decoration: none; font-size: 16px; padding: 10px 15px; border-radius: 5px;">Contact</a>
+                </nav>
+        
+                <!-- Icône du menu hamburger pour mobile -->
+                <div id="menu-hamburger" style="display: none; cursor: pointer;">
+                    <span style="color: white; font-size: 30px;">&#9776;</span>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Menu mobile caché par défaut -->
+        <nav id="menu-mobile" style="display: none; background-color: #4CAF50; padding: 20px;">
+            <a href="/" style="color: white; text-decoration: none; font-size: 18px; padding: 10px 0; display: block;">Accueil</a>
+            <a href="/a-propos" style="color: white; text-decoration: none; font-size: 18px; padding: 10px 0; display: block;">À propos</a>
+            <a href="/academique" style="color: white; text-decoration: none; font-size: 18px; padding: 10px 0; display: block;">Académique</a>
+            <a href="/admissions" style="color: white; text-decoration: none; font-size: 18px; padding: 10px 0; display: block;">Admissions</a>
+            <a href="/evenements" style="color: white; text-decoration: none; font-size: 18px; padding: 10px 0; display: block;">Événements</a>
+            <a href="/contact" style="color: white; text-decoration: none; font-size: 18px; padding: 10px 0; display: block;">Contact</a>
+        </nav>
+        
+        <!-- Script pour afficher/masquer le menu mobile -->
+        <script>
+            // Récupérer les éléments
+            const menuHamburger = document.getElementById("menu-hamburger");
+            const menuMobile = document.getElementById("menu-mobile");
+        
+            // Afficher/masquer le menu mobile au clic sur l'icône hamburger
+            menuHamburger.addEventListener("click", () => {
+                menuMobile.style.display = menuMobile.style.display === "block" ? "none" : "block";
+            });
+        
+            // Adapter le menu sur les grands écrans
+            window.addEventListener("resize", () => {
+                if (window.innerWidth > 768) {
+                    menuMobile.style.display = "none"; // Masquer le menu mobile sur les grands écrans
+                }
+            });
+        </script>
+         </h1>
+         </div>
+    <div class="banner"> <div style="background-color: #c17ae5; color: white; text-align: center; padding: 50px 20px;">
+        <h1 style="font-size: 48px; margin: 0;">Welcome to Sarah School</h1>
+        <p style="font-size: 20px;">Empowering Future Leaders with Excellence in Education</p>
+        <a href="/about" style="background-color: #fff; color: #4CAF50; padding: 12px 25px; font-size: 16px; text-decoration: none; border-radius: 5px;">Learn More About Us</a>
+    </div>
+     </div>
+    <div class="all">
+    <div class="form"> <!-- Contact Form -->
+        <section style="padding: 50px 20px; background-color: #f4f4f4;">
+            <div style="max-width: 800px; margin: 0 auto; background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <h2 style="text-align: center; font-size: 32px; color: #333;">Contact Us</h2>
+                <p style="text-align: center; font-size: 16px; color: #555;">Have questions? Reach out to us, and we’ll get back to you as soon as possible.</p>
+        
+                <!-- Contact Form -->
+                <form action="/submit-form" method="POST">
+                    <div style="margin-bottom: 20px;">
+                        <label for="name" style="font-size: 16px; color: #333;">Full Name:</label>
+                        <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;">
+                    </div>
+        
+                    <div style="margin-bottom: 20px;">
+                        <label for="email" style="font-size: 16px; color: #333;">Email Address:</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;">
+                    </div>
+        
+                    <div style="margin-bottom: 20px;">
+                        <label for="subject" style="font-size: 16px; color: #333;">Subject:</label>
+                        <input type="text" id="subject" name="subject" required style="width: 100%; padding: 10px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;">
+                    </div>
+        
+                    <div style="margin-bottom: 20px;">
+                        <label for="message" style="font-size: 16px; color: #333;">Message:</label>
+                        <textarea id="message" name="message" rows="6" required style="width: 100%; padding: 10px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+                    </div>
+        
+                    <div style="text-align: center;">
+                        <button type="submit" style="background-color: #4CAF50; color: white; padding: 12px 30px; font-size: 16px; border: none; border-radius: 5px;">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+         </div>       
+    <div class="image"><img src="images/نىش.PNG" alt="">  </div>
+    <div class="text">
+        <h2>""Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+             totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.m eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""</h2>
+      </div>
+   </div>
+   <div class="footer"> <!-- Footer Section -->
+    <footer style="background-color: #000000; padding: 20px 0; text-align: center; font-family: Arial, sans-serif;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <!-- School Information and Contact -->
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 30px;">
+                <div style="flex: 1; padding: 10px; text-align: left;">
+                    <h3>[School Name]</h3>
+                    <p style="font-size: 14px; color: #555;">Your path to excellence in education. We are committed to shaping the leaders of tomorrow with innovative and inclusive teaching methods.</p>
+                    <p style="font-size: 14px; color: #555;">© 2024 [School Name]. All rights reserved.</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div style="flex: 1; padding: 10px; text-align: left;">
+                    <h4 style="font-size: 16px; margin-bottom: 10px;">Quick Links</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li><a href="/about" style="color: #333; text-decoration: none;">About Us</a></li>
+                        <li><a href="/academics" style="color: #333; text-decoration: none;">Academics</a></li>
+                        <li><a href="/admissions" style="color: #333; text-decoration: none;">Admissions</a></li>
+                        <li><a href="/contact" style="color: #333; text-decoration: none;">Contact</a></li>
+                        <li><a href="/events" style="color: #333; text-decoration: none;">Events</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Information -->
+                <div style="flex: 1; padding: 10px; text-align: left;">
+                    <h4 style="font-size: 16px; margin-bottom: 10px;">Contact Us</h4>
+                    <p style="font-size: 14px; color: #555;">Phone: +1 (555) 123-4567</p>
+                    <p style="font-size: 14px; color: #555;">Email: info@[schoolname].edu</p>
+                    <p style="font-size: 14px; color: #555;">Address: 123 School Lane, City, Country</p>
+                </div>
+    
+                <!-- Social Media -->
+                <div style="flex: 1; padding: 10px; text-align: left;">
+                    <h4 style="font-size: 16px; margin-bottom: 10px;">Follow Us</h4>
+                    <a href="https://facebook.com/[schoolname]" style="margin-right: 10px;">
+                        <img src="facebook-icon.png" alt="Facebook" style="width: 30px; height: 30px;">
+                    </a>
+                    <a href="https://twitter.com/[schoolname]" style="margin-right: 10px;">
+                        <img src="twitter-icon.png" alt="Twitter" style="width: 30px; height: 30px;">
+                    </a>
+                    <a href="https://instagram.com/[schoolname]" style="margin-right: 10px;">
+                        <img src="instagram-icon.png" alt="Instagram" style="width: 30px; height: 30px;">
+                    </a>
+                    <a href="https://linkedin.com/[schoolname]">
+                        <img src="linkedin-icon.png" alt="LinkedIn" style="width: 30px; height: 30px;">
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Footer Navigation Links -->
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="/privacy-policy" style="color: #555; font-size: 14px; text-decoration: none; margin-right: 20px;">Privacy Policy</a>
+                <a href="/terms-of-service" style="color: #555; font-size: 14px; text-decoration: none;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+     </div>
+   
+</body>
+     
+</html>
